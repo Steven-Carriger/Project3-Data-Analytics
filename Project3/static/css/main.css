@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  header,
+  main,
+  footer {
+    display: block;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2F3C4F;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9edf4;
+  }
+  
+  button[type=submit] {
+    width: 100%;
+    background-color: #2F3C4F;
+    color: #f9edf4;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  body {
+    color: #f9edf4;
+    background-color: #506F86;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+
+  header,
+  footer {
+    margin-top: 0;
+    background-color: #2F3C4F;
+    padding: 2em;
+    color: #f9edf4;
+  }
+
+  div,
+  main {
+    padding: 0;
+    background-color: #506F86;
+    text-align: justify;
+  }
+  
+  main section {
+    padding: 0 1.5rem;
+    display: grid;
+  }
+
+  main section:last-child {
+    padding-bottom: 2em;
+  }
+  
+  main h3 {
+    text-align: center;
+    background-color:#506F86;
+    margin-bottom: 0;
+    margin-bottom: 0.75em;
+    margin-top: 0;
+    font-size: 1.5em;
+    color:#506F86;
+  }
+
+  #section2{
+    color:#2F3C4F;
+    background-color: #f9edf4;
+  }
+
+  #schedule{
+    color:#2F3C4F;
+    background-color: #f9edf4;
+  }
+
+  #hobbies p,
+  #schedule p{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10%;
+  }
+
+  #resume, #resume section, #resume div, #resume h3{
+    background-color: #f9edf4;
+  }
+
+  #resume h3, #resume h2{
+    color: black;
+    text-align: left;
+  }
+
+  #resume p{
+    color: black;
+  }
+
+  nav {
+    padding: .5em .5em 0 .5em;
+    margin: 0;
+    background-color: #506F86;
+    border-top: 10px solid #2F3C4F;
+    border-bottom: 1px solid #2F3C4F;
+  }
+  
+  nav a {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 1.25em;
+    display: inline-block;
+  }
+  
+  nav a:link{
+    color: #f9edf4;
+  }
+  
+  nav a:visited,
+  a:visited {
+    color: #f9edf4;
+  }
+  
+  nav a:hover,
+  a:hover {
+    background-color: #f9edf4;
+    color: #2F3C4F;
+  }
+  
+  nav ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  nav li {
+    border-bottom: #f9edf4 1px solid;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f9edf4;
+  }
+  
+  p {
+    font-size: 1.1em;
+  }
+  
+  ul {
+    margin: 0 0 1.5em;
+  }
+
+  button{
+    padding: .5em;
+    margin-bottom: .5em;
+  }
+  footer {
+    padding: 1.5em;
+  }
+  
+  footer p {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  footer a {
+    color: #f9edf4;
+  }
+  
+  footer a:visited {
+    color: #506F86;
+  }
+
+  #img {
+    width: 750px;
+    margin-left: 50%;
+  }
+
+@media only screen and (min-width: 80em) {
+    header{
+      background-size: cover;
+      background-origin: border-box;
+      background-position:center;
+      text-align: center;
+    }
+
+    header h1{
+      display: inline-block;
+      text-align: center;
+      padding: .5 0 .5 0;
+    }
+
+    nav {
+      align-self: center;
+    }
+    nav li {
+      border-bottom: none;
+      margin: auto;
+    }
+
+    nav ul {
+      display: flex;
+    }
+  
+    nav a {
+      background-color: #2F3C4F;
+      text-align: center;
+      min-width: 175px;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      margin: 0;
+      min-width: 175px;
+      padding: .5em;
+    }
+  
+    nav a:link {
+      color: #f9edf4;
+    }
+  
+    nav a:visited {
+      color: #f9edf4;
+    }
+
+    nav a:hover {
+      color: #2F3C4F;
+    }
+
+    #hobbies{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+    }
+    
+    #hobbies h2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    #hobbies #img {
+      width: 80%;
+      height: 400px;
+      margin-left: 10%;
+    }
+}
+@media only screen and (min-width: 100em) {
+  
+    nav {
+      display: flex;
+    }
+  
+    nav ul {
+      width: 50%;
+    }
+}
